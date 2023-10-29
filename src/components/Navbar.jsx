@@ -11,9 +11,9 @@ const Navbar = () => {
         setNav(!nav)
     }
     return (
-        <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
+        <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#899bb8] text-gray-300 shadow-xl opacity-80'>
             <div>
-                <Avatar src={Logo} className="w-20 h-20 text-large mt-2" />
+                <Avatar src={Logo} className="w-20 h-20 text-large mt-0 opacity-60" />
             </div>
             {/* menu bar */}
             <ul className='hidden md:flex'>
@@ -43,15 +43,12 @@ const Navbar = () => {
                     </Link>
                 </li>
             </ul>
-
             {/* meanu bar */}
-
             <div onClick={handleClick} className='md:hidden z-10 cursor-pointer'>
                 {
                     !nav ? <AiOutlineBars /> : <AiOutlineClose />
                 }
             </div>
-
             {/* mobile menu */}
             <ul className={
                 !nav
@@ -93,13 +90,13 @@ const Navbar = () => {
             <div className='hidden lg:flex fixed top-[35%] left-0'>
                 <ul>
                     <li className='w-[160px] h-[60px] flex justify-between items-center  ml-[-100px] hover:ml-[-10px] duration-300 bg-emerald-600'>
-                        <a className='flex justify-between items-center w-full text-gray-300' href="/"> LinkedIn <AiOutlineLinkedin size={30}/> </a>
+                        <a className='flex justify-between items-center w-full text-gray-300' href="https://www.linkedin.com/in/awolad-hossain-b0184a1b2/"> LinkedIn <AiOutlineLinkedin size={30}/> </a>
                     </li>
                     <li className='w-[160px] h-[60px] flex justify-between items-center  ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]'>
-                        <a className='flex justify-between items-center w-full text-gray-300' href="/"> GitHub <AiOutlineGithub size={30}/> </a>
+                        <a className='flex justify-between items-center w-full text-gray-300' href="https://github.com/awoladhossain"> GitHub <AiOutlineGithub size={30}/> </a>
                     </li>
                     <li className='w-[160px] h-[60px] flex justify-between items-center  ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]'>
-                        <a className='flex justify-between items-center w-full text-gray-300' href="/"> Mail <AiOutlineMail size={30}/> </a>
+                        <a className='flex justify-between items-center w-full text-gray-300' href="https://www.gmail.com"> Mail <AiOutlineMail size={30}/> </a>
                     </li>
                     <li className='w-[160px] h-[60px] flex justify-between items-center  ml-[-100px] hover:ml-[-10px] duration-300  bg-[#565f69]'>
                         <a className='flex justify-between items-center w-full text-gray-300' href="/"> Resume <AiOutlineUser size={30}/> </a>
