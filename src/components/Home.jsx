@@ -7,10 +7,10 @@ import { HiArrowNarrowRight } from 'react-icons/hi';
 const Home = () => {
     return (
         <div name='home' className='w-full min-h-screen bg-[#0a192f]'>
-            <div className='max-w-[1000px] mx-auto px-4 md:px-8 flex flex-col justify-center min-h-screen'>
+            <div className='max-w-[1000px] mx-auto px-4 md:px-8 flex flex-col justify-center min-h-screen '>
                 <div className='flex flex-col md:flex-row md:space-x-4 gap-5'>
-                    <div className='flex-shrink-0'>
-                        <img src={imgs} className='w-48 h-48' alt='my Image' />
+                    <div className='flex-shrink-0 mt-6'>
+                        <img src={imgs} className='w-48 h-56 rounded-3xl' alt='my Image' />
                     </div>
                     <div className='mt-4 md:mt-0'>
                         <p className='text-pink-600'>Hi, my name is</p>
@@ -35,7 +35,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div className='mx-56'>
-                    <button className='text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-cyan-400 hover:border-cyan-600'>
+                    <button className='text-white group border-2 px-6 py-3 flex items-center hover:bg-cyan-400 hover:border-cyan-600'>
                         View Work
                         <span className='group-hover:rotate-90 duration-300'>
                             <HiArrowNarrowRight className='ml-3' />
