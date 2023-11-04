@@ -3,6 +3,7 @@ import React from 'react';
 import imgs from '../assets/IMG-20220302-WA0004.jpg';
 import { TypeAnimation } from 'react-type-animation';
 import { HiArrowNarrowRight } from 'react-icons/hi';
+import { Link } from 'react-scroll';
 
 const Home = () => {
     return (
@@ -36,7 +37,9 @@ const Home = () => {
                 </div>
                 <div className='mx-56'>
                     <button className='text-white group border-2 px-6 py-3 flex items-center hover:bg-cyan-400 hover:border-cyan-600'>
-                        View Work
+                        <Link to='about' smooth={true} duration={500}>
+                            View Work
+                        </Link>
                         <span className='group-hover:rotate-90 duration-300'>
                             <HiArrowNarrowRight className='ml-3' />
                         </span>
